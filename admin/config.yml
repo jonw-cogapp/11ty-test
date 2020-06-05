@@ -1,3 +1,14 @@
 backend:
   name: git-gateway
+  repo: jonw-cogapp/11ty-test
   branch: master
+media_folder: "_site/img/uploads"
+public_folder: "/img/uploads"
+collections:
+  - name: "page"
+    label: "Page"
+    folder: "pages"
+    slug: "page-{{slug}}"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
