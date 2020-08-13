@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npx eleventy",
+    "build": "npx @11ty/eleventy",
+    "serve": "npx @11ty/eleventy  --serve",
+    "debug": "DEBUG=Eleventy* npx @11ty/eleventy",
+    "clean": "./scripts/clean.sh",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

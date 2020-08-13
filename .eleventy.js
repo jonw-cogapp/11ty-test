@@ -1,4 +1,4 @@
-const userComponent = require('./components/user');
+// const userComponent = require('./components/user');
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 
 module.exports = (config) => {
@@ -10,8 +10,7 @@ module.exports = (config) => {
     "njk"
   ]);
 
-  config.addPairedNunjucksShortcode("user", userComponent);
-
+  // config.addPairedNunjucksShortcode("user", userComponent);
   return {
     dir: {
       output: "dist",

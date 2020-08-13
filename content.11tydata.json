@@ -1,0 +1,5 @@
+{ 
+  "layout": "main.njk",
+  "tags": ["hulu"],
+  "permalink": "{{ page.fileSlug }}.html"
+}

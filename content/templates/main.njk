@@ -9,10 +9,9 @@
 <body>
   <nav>
     {# Output the navigation for "page" collection #}
-    {{ collections.page | eleventyNavigation | eleventyNavigationToHtml({
-      activeListItemClass: "current",
-      activeKey: eleventyNavigation.key
-    }) | safe }}
+    {# {{ collections.all | log }} #}
+    {{ collections.all | eleventyNavigation | eleventyNavigationToHtml | safe }}
+
   </nav>
   <main>
     <h1>{{ title }}</h1>
